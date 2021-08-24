@@ -12,13 +12,14 @@ class BookingsController < ApplicationController
     end
   end
 
+  def index
+    @bookings = Booking.all
+  end
+
   private
 
   def booking_params
     params.require(:booking).permit(:user_id, :event_id)
   end
 
-  def index
-      @bookings = Booking.all
-  end
 end
