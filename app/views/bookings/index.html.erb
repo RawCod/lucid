@@ -1,2 +1,15 @@
-<h1>Bookings#index</h1>
-<p>Find me in app/views/bookings/index.html.erb</p>
+<h1>My bookings:</h1>
+<p></p>
+
+<ul>
+  <% @bookings.each do |booking| %>
+    <li>
+      <%= link_to booking.title, booking_path(booking) %>
+      <%= link_to 'Edit', edit_booking_path(booking)  %>
+      <%= link_to 'Delete', booking_path(booking), method: :delete, data: { confirm: "Are you sure?" } %>
+
+    </li>
+  <% end %>
+  <li><%= link_to 'Add a new booking', new_booking_path %></li>
+
+</ul>
