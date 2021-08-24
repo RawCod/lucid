@@ -4,19 +4,19 @@
     <% @events.each do |event| %>
       <div class="events-card">
         <li class="name">
-          <%="Name: #{event.name}"%>
+          <%=event.name%>
         </li>
         <li class="info">
-          <%="Location: #{event.location}"%>
+          <%=event.location%>
         </li>
         <li class="info">
-          <%="Capacity: #{event.capacity}"%>
+          <%=event.capacity%>
         </li>
         <li class="info">
-          <%="Description: #{event.description}"%>
+          <%=event.description%>
         </li>
         <li class="info">
-          <%="Category: #{event.category}"%>
+          <%=event.category%>
         </li>
       </div>
     <% end %>
