@@ -1,2 +1,23 @@
-<h1>Events#index</h1>
-<p>Find me in app/views/events/index.html.erb</p>
+<div class="container">
+  <h1>Events</h1>
+  <p>Here are all our amazing events #trippy</p>
+    <% @events.each do |event| %>
+      <div class="events-card">
+        <li class="name">
+          <%=event.name%>
+        </li>
+        <li class="info">
+          <%=event.location%>
+        </li>
+        <li class="info">
+          <%=event.capacity%>
+        </li>
+        <li class="info">
+          <%=event.description%>
+        </li>
+        <li class="info">
+          <%=event.category%>
+        </li>
+      </div>
+    <% end %>
+</div>
