@@ -1,6 +1,7 @@
 <div class="container">
   <h1>My bookings:</h1>
-  <p></p>
+  <h3><%= link_to 'Back to home', root_path %></h3>
+
 
   <div class="booking-card">
     <% @bookings.each do |booking| %>
@@ -14,7 +15,6 @@
         <%# <%= link_to 'Delete', booking_path(booking), method: :delete, data: { confirm: "Are you sure?" } %>
       </li>
     <% end %>
-    <li><%= link_to 'Back to home', root_path %></li>
     <h4>Sucks to suck if you want to delete one, you cant! No refunds 🤡 🤡 🤡 🤡 🤡 🤡</h4>
   </div>
 </div>
