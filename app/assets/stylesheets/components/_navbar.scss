@@ -1,6 +1,6 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background: white;
+  background: transparent;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -9,4 +9,21 @@
 
 .navbar-lewagon .navbar-brand img {
   width: 40px;
+}
+
+.navbar-lewagon h2 {
+  font-family: $logo-font !important;
+  font-size: 24px;
+  color: white;
+}
+
+.navbar-link {
+  font-family: $mulish-font !important;
+  font-size: 24px;
+  color: white;
+}
+
+.navbar-link:hover {
+  text-decoration: none;
+  color: #DADDDE;
 }
