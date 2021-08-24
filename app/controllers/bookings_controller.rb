@@ -6,9 +6,9 @@ class BookingsController < ApplicationController
   def create
     @booking = Booking.new(booking_params)
     if @booking.save
-        redirect_to bookings_path, notice: "Your booking was successful."
+      redirect_to bookings_path, notice: "Your booking was successful."
     else
-        render: :new
+      render :new
     end
   end
 

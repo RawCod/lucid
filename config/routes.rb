@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   get 'bookings/new'
   get 'bookings/create'
-  get 'bookings/index'
+  get 'bookings', to: 'bookings#index'
   get 'events/index'
   get 'events/show'
   get 'events/new'
