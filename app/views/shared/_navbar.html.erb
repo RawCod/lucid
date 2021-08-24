@@ -5,9 +5,11 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
+
   <a class="navbar-link" href="#">Home</a>
   <a class="navbar-link" href="#">About</a>
   <a class="navbar-link" href="#">Contact</a>
+
 
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -16,7 +18,7 @@
         <li class="nav-item dropdown">
           <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-            <%= link_to "My bookings", "#", class: "dropdown-item" %>
+            <%= link_to "My bookings", bookings_path, class: "dropdown-item" %>
             <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
           </div>
         </li>
