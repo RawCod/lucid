@@ -1,15 +1,20 @@
-<h1>My bookings:</h1>
-<p></p>
+<div class="container">
+  <h1>My bookings:</h1>
+  <p></p>
 
-<ul>
-  <% @bookings.each do |booking| %>
-    <li>
-      <%= link_to booking.title, booking_path(booking) %>
-      <%= link_to 'Edit', edit_booking_path(booking)  %>
-      <%= link_to 'Delete', booking_path(booking), method: :delete, data: { confirm: "Are you sure?" } %>
-
-    </li>
-  <% end %>
-  <li><%= link_to 'Add a new booking', new_booking_path %></li>
-
-</ul>
+  <div class="booking-card">
+    <% @bookings.each do |booking| %>
+      <li>
+        <%="Name: #{booking.event.name}"%>
+        <%="Location: #{booking.event.location}"%>
+        <%="Capacity: #{booking.event.capacity}"%>
+        <%="Description: #{booking.event.description}"%>
+        <%="Category: #{booking.event.category}"%>
+        <%# <%= link_to 'Edit', edit_booking_path(booking)  %>
+        <%# <%= link_to 'Delete', booking_path(booking), method: :delete, data: { confirm: "Are you sure?" } %>
+      </li>
+    <% end %>
+    <li><%= link_to 'Back to home', root_path %></li>
+    <h4>Sucks to suck if you want to delete one, you cant! No refunds 🤡 🤡 🤡 🤡 🤡 🤡</h4>
+  </div>
+</div>
