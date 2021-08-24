@@ -1,0 +1,22 @@
+.events-card {
+  border: solid 2px white;
+  border-radius: 4px;
+  list-style: none;
+  margin-bottom: 16px;
+  color: white;
+  .name {
+    font-family: $logo-font;
+    font-weight: bold;
+  }
+  .info {
+    font-family: $mulish-font;
+    font-weight: lighter;
+  }
+  li {
+    display: block;
+  }
+}
+
+h1, p {
+  color: white;
+}
