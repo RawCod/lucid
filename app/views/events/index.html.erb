@@ -3,12 +3,9 @@
   <p>Here are all our amazing events #trippy</p>
     <% @events.each do |event| %>
       <div class="events-card">
-        <% if event.has_photos_attached? %>
-          <% event.photos.each do |photo| %>
-            <%= cl_image_tag photo.key, height: 150, width: 200, crop: :fill %>
-          <% end %>
+        <% if event.photo.attached? %>
+          <%= cl_image_tag event.photo.key, height: 150, width: 200, crop: :fill %>
         <% end %>
-
         <li class="name">
           <%=event.name%>
         </li>

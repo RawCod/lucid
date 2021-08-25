@@ -1,4 +1,4 @@
 class Event < ApplicationRecord
-  belongs_to :user
-  has_many_attached :photos
+  # belongs_to :user
+  has_one_attached :photo
 end
