@@ -1,4 +1,4 @@
-<div class="container">
+<div>
   <h1>Events</h1>
   <p>Here are all our amazing events #trippy</p>
     <% @events.each do |event| %>
@@ -7,7 +7,7 @@
           <%= cl_image_tag event.photo.key, height: 150, width: 200, crop: :fill %>
         <% end %>
         <li class="name">
-          <%=event.name%>
+          <%=link_to event.name, event_path(event)%>
         </li>
         <li class="info">
           <%=event.location%>
