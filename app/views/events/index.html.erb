@@ -4,7 +4,7 @@
     <% @events.each do |event| %>
       <div class="events-card">
         <li class="name">
-          <%=event.name%>
+          <%=link_to event.name, event_path(event)%>
         </li>
         <li class="info">
           <%=event.location%>
