@@ -1,9 +1,9 @@
-<div>
-<h3>Welcome Dreamer! Please book your event below:</h3>
-<%= simple_form_for([@event, @booking]) do |f| %>
-  <%= f.input :name, placeholder: "Name", label: false%>
-  <%= f.input :location, placeholder: "Location", label: false%>
-  <%= f.input :start_date, as: :date, html5: true %>
-  <%= f.button :submit, class: 'btn btn-primary' %>
-<% end %></p>
+<div class = "events-form">
+  <h3>Welcome Dreamer! Please book your event below:</h3>
+  <%= simple_form_for([@event, @booking]) do |f| %>
+    <%= f.input :name, placeholder: "Name", label: false%>
+    <%= f.input :location, placeholder: "Location", label: false%>
+    <%= f.input :start_date, as: :date, html5: true %>
+    <%= f.button :submit, class: 'btn btn-primary' %>
+  <% end %></p>
 </div>
