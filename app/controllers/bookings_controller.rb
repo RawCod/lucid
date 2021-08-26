@@ -1,7 +1,9 @@
 class BookingsController < ApplicationController
   def new
     @booking = Booking.new
-    @event = Event.find (params[:event_id])
+    @event = Event.find(params[:event_id])
+    @user = User.find(params[:user_id])
+
   end
 
   def create
