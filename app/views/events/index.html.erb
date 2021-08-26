@@ -1,8 +1,8 @@
-  <h1>Events</h1>
+<h1>Events</h1>
+<h3>Here are all our amazing events!</h3>
 <div class="other-container">
-  <h3>Here are all our amazing events #trippy</h3>
-  <div class="events-card">
-    <% @events.each do |event| %>
+  <% @events.each do |event| %>
+    <div class="events-card" data-aos="zoom-in-up" data-aos-duration=90>
       <% if event.photo.attached? %>
         <%= cl_image_tag event.photo.key, height: 150, width: 200, crop: :fill %>
       <% end %>
@@ -21,6 +21,6 @@
       <li class="info">
         <p><strong>CATEGORY: </strong><%=event.category%></p>
       </li>
-    <% end %>
-  </div>
+    </div>
+  <% end %>
 </div>

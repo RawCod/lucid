@@ -47,5 +47,4 @@ puts user
   fourth_event.save!
 end
 
-
 puts "data loaded successfully"
