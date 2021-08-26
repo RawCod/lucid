@@ -1,10 +1,16 @@
-<div class = "container">
-<h3>Welcome Dreamer! Please book your event below:</h3>
-<%= simple_form_for([@event, @booking]) do |f| %>
-  <%= f.input :name %>
-  <%= f.input :description %>
-  <%= f.input :location %>
-  <%= f.input :start_date, as: :date %>
-  <%= f.button :submit, class: 'btn btn-primary' %>
-<% end %></p>
+<div class= "container">
+  <div class="centred-container">
+    <div class="center">
+      <h3>Welcome Dreamer! Please book your event below:</h3>
+      <br>
+      <%= simple_form_for([@event, @booking]) do |f| %>
+        <%# <%= f.input :name %>
+        <%# <%= f.input :description %>
+        <%# <%= f.input :location %>
+        <%# <%= f.input :start_date, as: :date %>
+        <%= f.button :submit, class: 'btn btn-primary' %>
+      <% end %></p>
+        <%= @event.price %>
+    </div>
+  </div>
 </div>

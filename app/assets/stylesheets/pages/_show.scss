@@ -1,0 +1,21 @@
+.white-button {
+  background-color: white;
+  font-size: 18px;
+  color: black;
+  border-radius: 20px;
+  padding: 8px 12px;
+}
+
+.events-card {
+  background: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.5) 60%);
+  border: solid 2px white;
+  border-radius: 4px;
+  list-style: none;
+  margin-bottom: 16px;
+  color: white;
+
+    .name {
+    font-family: $logo-font;
+    font-weight: bold;
+  }
+}
