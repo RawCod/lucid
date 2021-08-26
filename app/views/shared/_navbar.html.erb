@@ -1,13 +1,13 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <h2>Lucid</h2>
+  <h2> <%= link_to "Lucid", root_path, class: "navbar-title" %></h2>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <%= link_to "Home", root_path, class: "navbar-link" %>
-  <a class="navbar-link" href="#">About</a>
   <%= link_to "Events", events_path, class: "navbar-link" %>
+  <%= link_to "My Bookings", events_path, class: "navbar-link" %>
 
 
 
