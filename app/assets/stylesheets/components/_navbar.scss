@@ -11,11 +11,17 @@
   width: 40px;
 }
 
-.navbar-lewagon h2 {
+.navbar-title {
   font-family: $logo-font !important;
   font-size: 24px;
   color: white;
 }
+
+.navbar-title:hover {
+  text-decoration: none;
+  color: #DADDDE;
+}
+
 
 .navbar-link {
   font-family: $mulish-font !important;
