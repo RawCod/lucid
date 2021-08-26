@@ -1,4 +1,7 @@
 .events-card {
+  display: grid;
+  grid-template-columns: 1fr, 1fr, 1fr;
+  grid-column-gap: 10px;
   border: solid 2px white;
   border-radius: 4px;
   list-style: none;
@@ -19,4 +22,9 @@
 
 h1, p {
   color: white;
+}
+
+.other-container {
+  padding: 60px;
+  justify-items: center;
 }
