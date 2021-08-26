@@ -1,26 +1,26 @@
-<div class="other-container">
   <h1>Events</h1>
-  <h3>Here are all our amazing events #trippy</p>
+<div class="other-container">
+  <h3>Here are all our amazing events #trippy</h3>
+  <div class="events-card">
     <% @events.each do |event| %>
-      <div class="events-card col-sm-1 col-md-6 col-lg-12">
-        <% if event.photo.attached? %>
-          <%= cl_image_tag event.photo.key, height: 150, width: 200, crop: :fill %>
-        <% end %>
-        <li class="name">
-          <%=link_to event.name, event_path(event)%>
-        </li>
-        <li class="info">
-          <%=event.location%>
-        </li>
-        <li class="info">
-          <%=event.capacity%>
-        </li>
-        <li class="info">
-          <%=event.description%>
-        </li>
-        <li class="info">
-          <%=event.category%>
-        </li>
-      </div>
+      <% if event.photo.attached? %>
+        <%= cl_image_tag event.photo.key, height: 150, width: 200, crop: :fill %>
+      <% end %>
+      <li class="name">
+        <p><%=link_to event.name, event_path(event)%></p>
+      </li>
+      <li class="info">
+        <p><strong>LOCATION: </strong><%=event.location%></p>
+      </li>
+      <li class="info">
+        <p><strong>CAPACITY: </strong><%=event.capacity%></p>
+      </li>
+      <li class="info">
+        <p><strong>DESCRIPTION: </strong><%=event.description%></p>
+      </li>
+      <li class="info">
+        <p><strong>CATEGORY: </strong><%=event.category%></p>
+      </li>
     <% end %>
+  </div>
 </div>
