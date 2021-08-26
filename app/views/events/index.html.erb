@@ -1,13 +1,13 @@
-  <h1>Events</h1>
+<h1>Events</h1>
+<h3>Here are all our amazing events!</h3>
 <div class="other-container">
-  <h3>Here are all our amazing events #trippy</h3>
-  <div class="events-card">
-    <% @events.each do |event| %>
+  <% @events.each do |event| %>
+    <div class="events-card" data-aos="zoom-in-up" data-aos-duration=90>
       <% if event.photo.attached? %>
         <%= cl_image_tag event.photo.key, height: 150, width: 200, crop: :fill %>
       <% end %>
       <li class="name">
-        <p><%=link_to event.name, event_path(event)%></p>
+        <p><%=event.name%></p>
       </li>
       <li class="info">
         <p><strong>LOCATION: </strong><%=event.location%></p>
@@ -21,9 +21,15 @@
       <li class="info">
         <p><strong>CATEGORY: </strong><%=event.category%></p>
       </li>
+<<<<<<< HEAD
       <li class="info">
         <p><strong>Price: </strong><%=event.price%></p>
       </li>
     <% end %>
   </div>
+=======
+      <%=link_to "MORE INFO", event_path(event)%>
+    </div>
+  <% end %>
+>>>>>>> fb0a1a0300b2b0625099b795a873957911eec1cc
 </div>

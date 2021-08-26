@@ -23,7 +23,7 @@ puts user
   event.photo.attach(io: file, filename: 'gold_ixirz8.gif', content_type: 'image/gif')
   event.save!
 
-  file2 = URI.open('https://c.files.bbci.co.uk/957C/production/_111686283_pic1.png') # panda
+  file2 = URI.open('https://miro.medium.com/max/11520/0*u9cIet_TY8gODSKf') # panda
   boris_description = "flat Earther, APAB - All Plants Are Bastards, trampoline expert, gets on well with the elderly and children"
   second_event = Event.new(user_id: user.id, name: "BOPAP", location: "Tate Modern, London, SE1 9TG", description: boris_description, category: "Nightmare", capacity: 133, price: 25.00)
   # second_event.photos.attach(io: file2, filename: 'image.png', content_type: 'image/png')
@@ -46,6 +46,5 @@ puts user
   fourth_event.photo.attach(io: file4, filename: 'image.png', content_type: 'image/png')
   fourth_event.save!
 end
-
 
 puts "data loaded successfully"
