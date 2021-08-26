@@ -1,8 +1,8 @@
-<div>
+<div class="other-container">
   <h1>Events</h1>
-  <p>Here are all our amazing events #trippy</p>
+  <h3>Here are all our amazing events #trippy</p>
     <% @events.each do |event| %>
-      <div class="events-card">
+      <div class="events-card col-sm-1 col-md-6 col-lg-12">
         <% if event.photo.attached? %>
           <%= cl_image_tag event.photo.key, height: 150, width: 200, crop: :fill %>
         <% end %>
