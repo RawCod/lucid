@@ -61,18 +61,40 @@ h3 {
   align-items: center;
   width: auto;
 }
-.new-event {
-    width: 50%;
-    margin: 0 auto;
-}
 
-.new-heading {
-margin: 15px;
-}
+// --------------------------------------------------------------------------------------
 
 .new-event {
-  background: linear-gradient(rgba(250, 251, 252, 0.4) 0%, rgba(19, 26, 124, 0.5) 60%);
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+h3 {
+  margin: 15px;
+  padding-left: 0px;
+  margin-left: 0px;
+  margin-bottom: 25px;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.new-event {
+  background: linear-gradient(rgba(250, 251, 252, 0.5) 0%, rgba(19, 26, 124, 0.6) 60%);
   border: solid 2px white;
   border-radius: 4px;
   padding: 50px
 }
+
+label{
+  color: white;
+}
+
+#event_photos {
+  color: white;
+}
+
+// input {
+//   #file_upload_button {
+//     background-color: black;
+//   }
+// }

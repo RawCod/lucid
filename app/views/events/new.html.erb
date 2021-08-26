@@ -1,13 +1,13 @@
 
 <div class = "new-event">
-<h3 class = "new-heading"> Weclome Dreamer! <br> Please create a New event below:</h3>
-<%= simple_form_for(@event) do |f| %>
-  <%= f.input :name, placeholder: "Name", label: false %>
-  <%= f.input :description, placeholder: "Description", label: false %>
-  <%= f.input :location, placeholder: "Location", label: false %>
-  <%= f.input :category, placeholder: "Category", label: false %>
-  <%# <%= f.input :capacity %>
-  <%= f.input :photos, as: :file , input_html: { multiple: true } %>
-  <%= f.button :submit, class: 'btn btn-primary' %>
-<% end %></p>
+  <h3> Weclome Dreamer! <br> Please create a New event below:</h3>
+  <%= simple_form_for(@event) do |f| %>
+    <%= f.input :name, placeholder: "Name", label: false %>
+    <%= f.input :description, placeholder: "Description", label: false %>
+    <%= f.input :location, placeholder: "Location", label: false %>
+    <%= f.input :category, placeholder: "Category", label: false %>
+    <%# <%= f.input :capacity %>
+    <%= f.input :photos, as: :file , input_html: { multiple: true } %>
+    <%= f.button :submit, class: 'btn btn-primary' %>
+  <% end %></p>
 </div>
