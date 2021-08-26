@@ -1,12 +1,13 @@
 class BookingsController < ApplicationController
   def new
     @booking = Booking.new
+    @event = Event.find (params[:event_id])
   end
 
   def create
     @booking = Booking.new(booking_params)
     if @booking.save
-      redirect_to bookings_path, notice: "Your booking was successful."
+      redirect_to event_booking_path(@booking), notice: "Your booking was successful."
     else
       render :new
     end
@@ -14,6 +15,10 @@ class BookingsController < ApplicationController
 
   def index
     @bookings = Booking.all
+  end
+
+  def show
+    @booking = Booking.find(params[:id])
   end
 
   private

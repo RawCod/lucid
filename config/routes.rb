@@ -1,13 +1,12 @@
 Rails.application.routes.draw do
   root to: 'pages#home'
   devise_for :users
-  resources :events
-  resources :users, only: :show do
-    member do
-      get :bookings, only: [:new, :create, :index, :destroy]
-    end
-    # resources :bookings, only: [:new, :create, :index, :destroy]
+  resources :events do
+    resources :bookings, only: [:new, :create, :index, :destroy]
   end
+  resources :bookings, only: [:index]
+  resources :users, only: :show
+    # resources :bookings, only: [:new, :create, :index, :destroy]
   # resources :bookings, only: [:new, :create, :index, :destroy]
 
   # get 'bookings/new'
