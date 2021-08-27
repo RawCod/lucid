@@ -1,6 +1,5 @@
 <div class="">
   <h1>My bookings:</h1>
-  <h3><%= link_to 'Back to home', root_path %></h3>
     <% @bookings.each do |booking| %>
       <% if booking.user_id == current_user.id %>
         <div class = "new-event" data-aos="zoom-in-up" data-aos-duration=90>
