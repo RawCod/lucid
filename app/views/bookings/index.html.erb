@@ -5,15 +5,15 @@
 
   <div class="booking-card">
     <% @bookings.each do |booking| %>
-      <li>
-        <%="Name: #{booking.event.name}"%>
-        <%="Location: #{booking.event.location}"%>
-        <%="Capacity: #{booking.event.capacity}"%>
-        <%="Description: #{booking.event.description}"%>
-        <%="Category: #{booking.event.category}"%>
+      <div class = "new-event" data-aos="zoom-in-up" data-aos-duration=90>
+        <p><strong>Name: </strong><%=booking.event.name%></p>
+        <p><strong>Location: </strong><%=booking.event.location%></p>
+        <p><strong>Capacity: </strong><%=booking.event.capacity%></p>
+        <p><strong>Description: </strong><%=booking.event.description%></p>
+        <p><strong>Category: </strong><%=booking.event.category%></p>
         <%# <%= link_to 'Edit', edit_booking_path(booking)  %>
         <%# <%= link_to 'Delete', booking_path(booking), method: :delete, data: { confirm: "Are you sure?" } %>
-      </li>
+      </div>
     <% end %>
   </div>
 </div>

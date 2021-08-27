@@ -15,7 +15,7 @@ body {
 
 h1 {
   font-family: $mulish-font !important;
-  font-size: 250px;
+  font-size: 150px;
 }
 
 h3 {
@@ -73,6 +73,10 @@ h3 {
   width: 50%;
   margin: 0 auto;
   margin-top: 80px;
+  background: linear-gradient(rgba(250, 251, 252, 0.5) 0%, rgba(19, 26, 124, 0.6) 60%);
+  border: solid 2px white;
+  border-radius: 4px;
+  padding: 50px
 }
 
 h3 {
@@ -83,12 +87,6 @@ h3 {
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
 }
 
-.new-event {
-  background: linear-gradient(rgba(250, 251, 252, 0.5) 0%, rgba(19, 26, 124, 0.6) 60%);
-  border: solid 2px white;
-  border-radius: 4px;
-  padding: 50px
-}
 
 label{
   color: white;
