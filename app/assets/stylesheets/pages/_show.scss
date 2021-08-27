@@ -6,7 +6,7 @@
   padding: 8px 12px;
 }
 
-.events-card {
+.show-card {
   background: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.5) 60%);
   border: solid 2px white;
   border-radius: 4px;
@@ -14,6 +14,9 @@
   margin-bottom: 16px;
   color: white;
 
+    a {
+      padding-left: 10px;
+    }
     .name {
     font-family: $logo-font;
     font-weight: bold;
