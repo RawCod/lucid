@@ -2,7 +2,7 @@
 <h3 class="h3">Here are all our amazing events!</h3>
 <div class="other-container">
   <% @events.each do |event| %>
-    <div class="events-card" data-aos="zoom-in-up" data-aos-duration=90>
+    <div class="events-card" data-aos="flip-down" data-aos-duration=90>
       <% if event.photo.attached? %>
         <%= cl_image_tag event.photo.key, height: 150, width: 200, crop: :fill %>
       <% end %>
