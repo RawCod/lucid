@@ -1,14 +1,16 @@
 
 <div class="container">
   <div class="row">
-    <div class="col events-card center">
+    <div class="col show-card center">
     <%= cl_image_tag @event.photo.key, height: 150, width: 200, crop: :fill %>
       <p class=>
         <h2><%= @event.name %> </h2>
       </p>
 
       <p>Category:<%= @event.category %></p>
-      <p><%= @event.description%></p>
+      <li class="show-info">
+        <p><strong>Description: </strong><%=@event.description%></p>
+      </li>
 
       <p>
         <%= link_to "Reserve Entry", new_event_booking_path(@event), class: "white-button"  %>

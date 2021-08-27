@@ -59,11 +59,23 @@ h1, p {
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
 }
 
-.h3 {
+.h3, h4 {
   padding-left: 60px;
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.387);
   margin: 0px;
 }
+
+.h3 {
+  font-size: 30px;
+}
+
+h4 {
+  padding-right: 60px;
+  padding-bottom: 40px;
+  text-align: justify;
+  color: white;
+}
+
 
 .other-container {
   padding: 60px;
