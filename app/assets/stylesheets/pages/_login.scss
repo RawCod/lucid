@@ -1,0 +1,27 @@
+#new_user {
+  margin: 40px;
+}
+
+.login-container {
+  background: linear-gradient(rgba(0, 0, 0, 0.346) 0%, rgba(0, 0, 0, 0.5) 60%);
+  display: flex;
+  align-content: center;
+  border: solid white 1px;
+}
+
+.login-options {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding-top: 40px;
+  margin-right: 20px;
+  a {
+    margin-top: 25px;
+    border: solid #167FFB 2px;
+    padding: 8px;
+    text-decoration: none;
+    color: #167FFB;
+    background: linear-gradient(rgba(0, 0, 0, 0.346) 0%, rgba(0, 0, 0, 0.5) 60%);
+    text-shadow: 2px 2px 3px rgba(217, 217, 217, 0.3);
+  }
+}
