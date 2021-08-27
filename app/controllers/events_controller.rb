@@ -15,7 +15,7 @@ class EventsController < ApplicationController
     @event = Event.new(event_params)
     @event.user = current_user
     if @event.save
-      redirect_to events_path, notice: "Your event was created successfully."
+      # redirect_to events_path, notice: "Thanks for your suggestion (:"
     else
       render :new
     end

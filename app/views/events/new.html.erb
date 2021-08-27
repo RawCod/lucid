@@ -1,6 +1,6 @@
 
 <div class = "new-event">
-  <h3> Weclome Dreamer! <br> Please create a New event below:</h3>
+  <h3> Weclome Dreamer! <br> Please suggest a new event below:</h3>
   <%= simple_form_for(@event) do |f| %>
     <%= f.input :name, placeholder: "Name", label: false %>
     <%= f.input :description, placeholder: "Description", label: false %>
@@ -8,6 +8,6 @@
     <%= f.input :category, placeholder: "Category", label: false %>
     <%# <%= f.input :capacity %>
     <%# <%= f.input :photos, as: :file , input_html: { multiple: true } %>
-    <%= f.button :submit, id: "sweet-alert-button", class: 'btn btn-primary' %>
+    <%= f.button :submit, id: "sweet-alert-button", class: 'btn btn-primary', value: "Suggest event" %>
   <% end %></p>
 </div>

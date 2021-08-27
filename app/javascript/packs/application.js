@@ -32,3 +32,17 @@ document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
 });
+
+import { initSweetalert } from '../plugins/init_sweetalert';
+
+initSweetalert('#sweet-alert-button', {
+  position: 'top-end',
+  icon: 'success',
+  title: 'Your event suggestion has been submitted',
+  text: 'We will contact you if it is selected as a future event',
+  timer: 5000
+}, () => {
+  window.location.replace("/events");
+});
+
+// can't use redirect_to in javascript - isn't a js function - instead window.location.replace()
